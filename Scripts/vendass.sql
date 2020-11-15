@@ -23,9 +23,9 @@ COMMENT ON SCHEMA mkt
 
 CREATE TABLE mkt."TB_LOJA"
 (
-    "ID_LOJA" character varying(50) COLLATE pg_catalog."default" NOT NULL,
-    "CIDADE" character varying(50) COLLATE pg_catalog."default",
-    "ESTADO" character varying(50) COLLATE pg_catalog."default",
+    "ID_LOJA" character varying(50) NOT NULL,
+    "CIDADE" character varying(50),
+    "ESTADO" character varying(50),
     CONSTRAINT "TB_LOJA_pkey" PRIMARY KEY ("ID_LOJA")
 )
 
@@ -39,11 +39,11 @@ TABLESPACE pg_default;
 
 CREATE TABLE mkt."TB_PRODUTO"
 (
-    "ID_PRODUTO" character varying(50) COLLATE pg_catalog."default" NOT NULL,
-    "NOME_PRODUTO" character varying(50) COLLATE pg_catalog."default",
-    "CATEGORIA" character varying(50) COLLATE pg_catalog."default",
-    "SEGMENTO" character varying(50) COLLATE pg_catalog."default",
-    "MARCA" character varying(50) COLLATE pg_catalog."default",
+    "ID_PRODUTO" character varying(50) NOT NULL,
+    "NOME_PRODUTO" character varying(50),
+    "CATEGORIA" character varying(50),
+    "SEGMENTO" character varying(50),
+    "MARCA" character varying(50),
     CONSTRAINT "TB_PRODUTO_pkey" PRIMARY KEY ("ID_PRODUTO")
 )
 
@@ -67,7 +67,7 @@ TABLESPACE pg_default;
 ALTER TABLE mkt."TB_DATA"
     OWNER to postgres;
 
-ALTER TABLE mkt."TB_DATA" ALTER COLUMN "DATA_COMPLETA" SET DATA TYPE character varying(20) COLLATE "pt-BR-x-icu"
+ALTER TABLE mkt."TB_DATA" ALTER COLUMN "DATA_COMPLETA" SET DATA TYPE character dbo.varying(20) COLLATE "pt-BR-x-icu"
 
 
 CREATE TABLE mkt."TB_VENDEDOR"
@@ -102,13 +102,13 @@ ALTER TABLE mkt."TB_VENDAS"
 ALTER TABLE mkt."TB_VENDAS"
     ALTER COLUMN "VALOR_VENDA" TYPE double precision;
 
-ALTER TABLE mkt."TB_VENDAS" ALTER COLUMN "DATA_COMPLETA" SET DATA TYPE character varying(20) COLLATE "pt-BR-x-icu"
+ALTER TABLE mkt."TB_VENDAS" ALTER COLUMN "DATA_COMPLETA" SET DATA TYPE character dbo.varying(20) COLLATE "pt-BR-x-icu"
 
 ALTER TABLE mkt."TB_VENDAS"
-    ALTER COLUMN "ID_PRODUTO" TYPE character varying(20);
+    ALTER COLUMN "ID_PRODUTO" TYPE character dbo.varying(20);
 
 ALTER TABLE mkt."TB_VENDAS"
-    ALTER COLUMN "ID_LOJA" TYPE character varying(20);
+    ALTER COLUMN "ID_LOJA" TYPE character dbo.varying(20);
 
 ALTER TABLE mkt."TB_VENDAS"
-    ALTER COLUMN "ID_VENDEDOR" TYPE character varying(20);
+    ALTER COLUMN "ID_VENDEDOR" TYPE character dbo.varying(20);
