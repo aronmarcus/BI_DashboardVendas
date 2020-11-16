@@ -15,7 +15,8 @@
 <p>Os dados foram extraídos de diferentes tabelas de um banco de dados transacional e como a empresa vai usar os relatórios todos os meses, alguns consultores recomendaram o uso
 de um Data Warehouse. Aqui as colunas disponíveis nos arquivos txt:
  
- ![]()
+ ![2020-11-16 (2)](https://user-images.githubusercontent.com/27938405/99299932-b5470500-282a-11eb-8291-da58d7f6e19f.png)
+
 
  <p>Haverá diversas reuniões para definição da estratégia de vendas e os relatórios poderão ser extraídos sob demanda, de acordo com a necessidade dos gestores. Por conta disso, é necessário criar um modelo de dados que permita a extração de relatórios a qualquer momento e que permita extrair dados por diferentes visões e ângulos. Os dados devem ser alimentados em um banco de dados consolidado, que será atualizado mensalmente com novos dados.</p>
 
@@ -28,6 +29,12 @@ de um Data Warehouse. Aqui as colunas disponíveis nos arquivos txt:
   <p>Base de dados em arquivos ".csv", tendo como fonte a plataforma de cursos da Data Science Academy (link nas referencias). Estes arquivos foram tratados no Sistema gerenciador de Banco de Dados PostgreSQL e guardados em um Datawarehouse. Feito conexão direta do PowerBI com o PostgreSQL. </p>
 
 ## Desenvolvimento ##
+
+### Instalação das ferramentas ###
+  
+  - [PostgreSQL](https://www.postgresql.org/download/)
+  - [Power BI Desktop](https://powerbi.microsoft.com/pt-br/desktop/)
+
 
   <p>Dashboard construído com base em um modelo/protótipo do site da Data Science Academy, seguindo estas etapas:</p>
   
@@ -78,16 +85,16 @@ de um Data Warehouse. Aqui as colunas disponíveis nos arquivos txt:
 
   - <p>Softwares.</p>
   
-     - [x] <strong>Git:</strong> Utilizado para fazer o controle de versão do código gerado ao longo do projeto;
+     - [x] <strong>Git:</strong> Utilizado para fazer o controle de versão do código gerado ao longo do projeto;</p>
      - [x] <strong>Github Desktop:</strong> Utilizado para fazer a interface do Git para controle de versão do código gerado ao longo do projeto;</p>
      - [x] <strong>Notepad++:</strong> Utilizado para geração e edição dos arquivos ".txt", ".md";</p>
      - [x] <strong>Microsoft PowerBI:</strong> Utilizado para tratamento de dados, visualização e criação do dashboard interativo.</p>
-     - [x] <strong>PostgreSQL:</strong> SGBD utilizado para modelagem dos dados, implementação de DW e processo ETL.</p>
+     - [x] <strong>PostgreSQL:</strong> SGBD utilizado para modelagem dos dados, implementação de DW, processo ETL e scripts SQL.</p>
   
   ## Referências ##
   
   - [Data Science Academy](https://www.datascienceacademy.com.br/)
-  - [Power BI para Data Science](https://www.datascienceacademy.com.br/course?courseid=microsoft-power-bi-para-data-science)
+  - [Microsoft Power BI para Data Science](https://www.datascienceacademy.com.br/course?courseid=microsoft-power-bi-para-data-science)
   
   ## Licença ##
   
